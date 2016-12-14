@@ -14,6 +14,11 @@
 		26A986A01E002FA600AB8261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A9869E1E002FA600AB8261 /* LaunchScreen.storyboard */; };
 		26A986AB1E002FA600AB8261 /* WhiteBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986AA1E002FA600AB8261 /* WhiteBoardTests.swift */; };
 		26A986B61E002FA600AB8261 /* WhiteBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986B51E002FA600AB8261 /* WhiteBoardUITests.swift */; };
+		26A986C51E00508A00AB8261 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986C41E00508A00AB8261 /* CanvasViewController.swift */; };
+		26A986C81E00529F00AB8261 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986C71E00529F00AB8261 /* CanvasView.swift */; };
+		26A986CA1E00BC4100AB8261 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986C91E00BC4100AB8261 /* Mark.swift */; };
+		26A986CC1E01953C00AB8261 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986CB1E01953C00AB8261 /* Vertex.swift */; };
+		26A986CE1E019C5200AB8261 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986CD1E019C5200AB8261 /* Dot.swift */; };
 		D7D63CA162FB24F70E03A1DE /* Pods_WhiteBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB11945E82C71326CAE2776C /* Pods_WhiteBoard.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,11 @@
 		26A986B11E002FA600AB8261 /* WhiteBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A986B51E002FA600AB8261 /* WhiteBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBoardUITests.swift; sourceTree = "<group>"; };
 		26A986B71E002FA600AB8261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A986C41E00508A00AB8261 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasViewController.swift; path = Canvas/CanvasViewController.swift; sourceTree = "<group>"; };
+		26A986C71E00529F00AB8261 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasView.swift; path = Canvas/CanvasView.swift; sourceTree = "<group>"; };
+		26A986C91E00BC4100AB8261 /* Mark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		26A986CB1E01953C00AB8261 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vertex.swift; path = Canvas/Canvas/Vertex.swift; sourceTree = "<group>"; };
+		26A986CD1E019C5200AB8261 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dot.swift; path = Canvas/Dot.swift; sourceTree = "<group>"; };
 		2ADDCFC7A3124F82EEDF8421 /* Pods-WhiteBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteBoard/Pods-WhiteBoard.release.xcconfig"; sourceTree = "<group>"; };
 		AB11945E82C71326CAE2776C /* Pods_WhiteBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhiteBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,7 +122,8 @@
 		26A986941E002FA600AB8261 /* WhiteBoard */ = {
 			isa = PBXGroup;
 			children = (
-				26A986951E002FA600AB8261 /* AppDelegate.swift */,
+				26A986C61E00509000AB8261 /* Canvas */,
+				26A986C31E004FA400AB8261 /* Auxliary */,
 				26A986971E002FA600AB8261 /* ViewController.swift */,
 				26A986991E002FA600AB8261 /* Main.storyboard */,
 				26A9869C1E002FA600AB8261 /* Assets.xcassets */,
@@ -138,6 +149,26 @@
 				26A986B71E002FA600AB8261 /* Info.plist */,
 			);
 			path = WhiteBoardUITests;
+			sourceTree = "<group>";
+		};
+		26A986C31E004FA400AB8261 /* Auxliary */ = {
+			isa = PBXGroup;
+			children = (
+				26A986951E002FA600AB8261 /* AppDelegate.swift */,
+			);
+			name = Auxliary;
+			sourceTree = "<group>";
+		};
+		26A986C61E00509000AB8261 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				26A986C41E00508A00AB8261 /* CanvasViewController.swift */,
+				26A986C71E00529F00AB8261 /* CanvasView.swift */,
+				26A986C91E00BC4100AB8261 /* Mark.swift */,
+				26A986CB1E01953C00AB8261 /* Vertex.swift */,
+				26A986CD1E019C5200AB8261 /* Dot.swift */,
+			);
+			name = Canvas;
 			sourceTree = "<group>";
 		};
 		65DC839C1E663A20BBA48C0A /* Pods */ = {
@@ -335,7 +366,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26A986981E002FA600AB8261 /* ViewController.swift in Sources */,
+				26A986C51E00508A00AB8261 /* CanvasViewController.swift in Sources */,
+				26A986C81E00529F00AB8261 /* CanvasView.swift in Sources */,
+				26A986CE1E019C5200AB8261 /* Dot.swift in Sources */,
+				26A986CA1E00BC4100AB8261 /* Mark.swift in Sources */,
 				26A986961E002FA600AB8261 /* AppDelegate.swift in Sources */,
+				26A986CC1E01953C00AB8261 /* Vertex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +444,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -458,6 +495,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -487,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 032D52A058029E0EB61FCB3E /* Pods-WhiteBoard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhiteBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ADDCFC7A3124F82EEDF8421 /* Pods-WhiteBoard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhiteBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
