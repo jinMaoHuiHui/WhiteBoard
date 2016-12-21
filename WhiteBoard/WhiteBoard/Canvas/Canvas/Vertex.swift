@@ -12,9 +12,13 @@ class Vertex: NSObject, Mark {
     
     internal var color: UIColor?
     internal var size: CGFloat?
-    internal var location: CGPoint
+    internal var location: CGPoint?
     internal var lastChild: Mark?
-    internal var count: UInt { return 0 }
+    internal var count: Int { return 0 }
+    
+    override internal var description: String {
+        return "{ type: Vertex, size: \(size), color:\(color), location:\(location) }"
+    }
 
     init(location: CGPoint) {
         self.location = location
@@ -22,22 +26,34 @@ class Vertex: NSObject, Mark {
         
     }
 
-    func addMark() {}
+    func addMark(_ mark: Mark) {}
     func removeMark(_ mark: Mark){}
-    func childAtIndex(_ index: UInt) -> Mark? { return nil }
+    func childAtIndex(_ index: Int) -> Mark? { return nil }
     
-    func drawWithContext(_ contenxt: CGContext) { }
+    func drawWithContext(_ context: CGContext) {
+        if let vertexLocation = location {
+            context.addLine(to: vertexLocation)
+        }
+    }
+
+    func acceptMarkVisitor(_ visitor: MarkVisitor) {
+        visitor.visitVertex(self)
+    }
     
     //  MARK: NScopying
     func copy(with zone: NSZone? = nil) -> Any {
-        
-        return 1
+        let vertexLocation = location ?? CGPoint(x: 0, y: 0)
+        let vertexCopy = Vertex(location: vertexLocation)
+        return vertexCopy
     }
     //  MARK: NSCoding
     required init?(coder aDecoder: NSCoder) {
-        location = aDecoder.decodeCGPoint(forKey: "location")
+        location = aDecoder.decodeCGPoint(forKey: "Vertexlocation")
     }
-    func encode(with: NSCoder) {
-    
+    func encode(with aCoder: NSCoder) {
+        if let vertexLocation = location {
+            aCoder.encode(vertexLocation, forKey: "Vertexlocation")
+        }
     }
+
 }

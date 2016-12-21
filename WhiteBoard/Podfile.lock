@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.2.0)
   - SnapKit (3.0.2)
+  - Socket.IO-Client-Swift (8.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - SnapKit (~> 3.0.2)
+  - Socket.IO-Client-Swift (~> 8.2.0)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  Socket.IO-Client-Swift: 900cf511777045c80d1ce1f11f71261e87765dd1
 
-PODFILE CHECKSUM: 2995c5d70ac08b3244da3e45830ff6e803df1209
+PODFILE CHECKSUM: b8ecbbd1c5d1f8dc2983c91ae33715476ff26c41
 
 COCOAPODS: 1.1.1

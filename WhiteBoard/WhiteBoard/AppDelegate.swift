@@ -19,7 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if window != nil {
-            window!.rootViewController = CanvasViewController()
+            let canvasVC = CanvasViewController()
+            let canvasModel = Scribble()
+            let socketImp = HttpFactory.createSocket()
+            socketImp.scribble = canvasModel
+            canvasVC.scribble = canvasModel
+            canvasModel.addObservers(observers: canvasVC, socketImp)
+            window!.rootViewController = canvasVC
             window!.backgroundColor = UIColor.white
             window!.makeKeyAndVisible()
         }

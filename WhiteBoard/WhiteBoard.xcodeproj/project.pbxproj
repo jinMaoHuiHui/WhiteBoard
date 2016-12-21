@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260C04241E09460D002E0C15 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C04231E09460D002E0C15 /* Observer.swift */; };
+		260C04281E0A3B90002E0C15 /* SocketProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C04271E0A3B90002E0C15 /* SocketProxy.swift */; };
+		260C042A1E0A458F002E0C15 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C04291E0A458F002E0C15 /* UserAuthentication.swift */; };
+		260C042D1E0A4FCF002E0C15 /* MarkCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C042C1E0A4FCF002E0C15 /* MarkCoder.swift */; };
+		2616E1391E07D93F0011830E /* Scribble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616E1381E07D93F0011830E /* Scribble.swift */; };
+		2616E13B1E07D9540011830E /* ScribbleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616E13A1E07D9540011830E /* ScribbleManager.swift */; };
+		2616E13F1E07FDA70011830E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616E13E1E07FDA70011830E /* Logger.swift */; };
+		2616E1411E0800780011830E /* Collection+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616E1401E0800780011830E /* Collection+SafeSubscript.swift */; };
+		2616E1441E0838510011830E /* MarkRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616E1431E0838510011830E /* MarkRenderer.swift */; };
+		26639C531E01B1E400D8BBA0 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26639C521E01B1E400D8BBA0 /* Stroke.swift */; };
+		26639C551E029F7400D8BBA0 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26639C541E029F7400D8BBA0 /* Array+Remove.swift */; };
 		26A986961E002FA600AB8261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986951E002FA600AB8261 /* AppDelegate.swift */; };
 		26A986981E002FA600AB8261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A986971E002FA600AB8261 /* ViewController.swift */; };
 		26A9869B1E002FA600AB8261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A986991E002FA600AB8261 /* Main.storyboard */; };
@@ -41,6 +52,17 @@
 
 /* Begin PBXFileReference section */
 		032D52A058029E0EB61FCB3E /* Pods-WhiteBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteBoard/Pods-WhiteBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		260C04231E09460D002E0C15 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observer.swift; path = Canvas/Observer.swift; sourceTree = "<group>"; };
+		260C04271E0A3B90002E0C15 /* SocketProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketProxy.swift; path = Canvas/Http/SocketProxy.swift; sourceTree = "<group>"; };
+		260C04291E0A458F002E0C15 /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAuthentication.swift; path = Canvas/Account/UserAuthentication.swift; sourceTree = "<group>"; };
+		260C042C1E0A4FCF002E0C15 /* MarkCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkCoder.swift; path = Canvas/Marks/MarkCoder.swift; sourceTree = "<group>"; };
+		2616E1381E07D93F0011830E /* Scribble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scribble.swift; path = Canvas/Canvas/Scribble.swift; sourceTree = "<group>"; };
+		2616E13A1E07D9540011830E /* ScribbleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScribbleManager.swift; path = Canvas/ScribbleManager.swift; sourceTree = "<group>"; };
+		2616E13E1E07FDA70011830E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Canvas/Canvas/Logger.swift; sourceTree = "<group>"; };
+		2616E1401E0800780011830E /* Collection+SafeSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Collection+SafeSubscript.swift"; path = "Canvas/Collection+SafeSubscript.swift"; sourceTree = "<group>"; };
+		2616E1431E0838510011830E /* MarkRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkRenderer.swift; path = Canvas/Canvas/MarkRenderer.swift; sourceTree = "<group>"; };
+		26639C521E01B1E400D8BBA0 /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = Canvas/Canvas/Stroke.swift; sourceTree = "<group>"; };
+		26639C541E029F7400D8BBA0 /* Array+Remove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Remove.swift"; path = "Canvas/Canvas/Array+Remove.swift"; sourceTree = "<group>"; };
 		26A986921E002FA600AB8261 /* WhiteBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A986951E002FA600AB8261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26A986971E002FA600AB8261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +117,44 @@
 				AB11945E82C71326CAE2776C /* Pods_WhiteBoard.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		260C04221E0945D1002E0C15 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				260C04231E09460D002E0C15 /* Observer.swift */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
+		260C04261E0985CE002E0C15 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				260C04271E0A3B90002E0C15 /* SocketProxy.swift */,
+				260C04291E0A458F002E0C15 /* UserAuthentication.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		260C042B1E0A4FA6002E0C15 /* Marks */ = {
+			isa = PBXGroup;
+			children = (
+				26A986C91E00BC4100AB8261 /* Mark.swift */,
+				26A986CB1E01953C00AB8261 /* Vertex.swift */,
+				26A986CD1E019C5200AB8261 /* Dot.swift */,
+				26639C521E01B1E400D8BBA0 /* Stroke.swift */,
+				260C042C1E0A4FCF002E0C15 /* MarkCoder.swift */,
+			);
+			name = Marks;
+			sourceTree = "<group>";
+		};
+		2616E1421E0816520011830E /* Marks-Memento */ = {
+			isa = PBXGroup;
+			children = (
+				2616E1381E07D93F0011830E /* Scribble.swift */,
+				2616E13A1E07D9540011830E /* ScribbleManager.swift */,
+			);
+			name = "Marks-Memento";
 			sourceTree = "<group>";
 		};
 		26A986891E002FA600AB8261 = {
@@ -154,7 +214,10 @@
 		26A986C31E004FA400AB8261 /* Auxliary */ = {
 			isa = PBXGroup;
 			children = (
+				26639C541E029F7400D8BBA0 /* Array+Remove.swift */,
 				26A986951E002FA600AB8261 /* AppDelegate.swift */,
+				2616E13E1E07FDA70011830E /* Logger.swift */,
+				2616E1401E0800780011830E /* Collection+SafeSubscript.swift */,
 			);
 			name = Auxliary;
 			sourceTree = "<group>";
@@ -162,11 +225,13 @@
 		26A986C61E00509000AB8261 /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
+				260C04261E0985CE002E0C15 /* Http */,
+				260C04221E0945D1002E0C15 /* Observer */,
 				26A986C41E00508A00AB8261 /* CanvasViewController.swift */,
 				26A986C71E00529F00AB8261 /* CanvasView.swift */,
-				26A986C91E00BC4100AB8261 /* Mark.swift */,
-				26A986CB1E01953C00AB8261 /* Vertex.swift */,
-				26A986CD1E019C5200AB8261 /* Dot.swift */,
+				2616E1431E0838510011830E /* MarkRenderer.swift */,
+				260C042B1E0A4FA6002E0C15 /* Marks */,
+				2616E1421E0816520011830E /* Marks-Memento */,
 			);
 			name = Canvas;
 			sourceTree = "<group>";
@@ -251,6 +316,7 @@
 				TargetAttributes = {
 					26A986911E002FA600AB8261 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P6EM54J52E;
 						ProvisioningStyle = Automatic;
 					};
 					26A986A51E002FA600AB8261 = {
@@ -366,12 +432,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				26A986981E002FA600AB8261 /* ViewController.swift in Sources */,
+				260C04281E0A3B90002E0C15 /* SocketProxy.swift in Sources */,
+				260C04241E09460D002E0C15 /* Observer.swift in Sources */,
+				2616E1391E07D93F0011830E /* Scribble.swift in Sources */,
+				26639C551E029F7400D8BBA0 /* Array+Remove.swift in Sources */,
 				26A986C51E00508A00AB8261 /* CanvasViewController.swift in Sources */,
 				26A986C81E00529F00AB8261 /* CanvasView.swift in Sources */,
 				26A986CE1E019C5200AB8261 /* Dot.swift in Sources */,
 				26A986CA1E00BC4100AB8261 /* Mark.swift in Sources */,
 				26A986961E002FA600AB8261 /* AppDelegate.swift in Sources */,
 				26A986CC1E01953C00AB8261 /* Vertex.swift in Sources */,
+				2616E13F1E07FDA70011830E /* Logger.swift in Sources */,
+				2616E1411E0800780011830E /* Collection+SafeSubscript.swift in Sources */,
+				26639C531E01B1E400D8BBA0 /* Stroke.swift in Sources */,
+				260C042D1E0A4FCF002E0C15 /* MarkCoder.swift in Sources */,
+				2616E13B1E07D9540011830E /* ScribbleManager.swift in Sources */,
+				260C042A1E0A458F002E0C15 /* UserAuthentication.swift in Sources */,
+				2616E1441E0838510011830E /* MarkRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +525,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sheng Tian (4CUBVKFY3K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sheng Tian (4CUBVKFY3K)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -467,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -499,7 +577,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sheng Tian (4CUBVKFY3K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sheng Tian (4CUBVKFY3K)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -512,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -525,11 +604,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 032D52A058029E0EB61FCB3E /* Pods-WhiteBoard.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P6EM54J52E;
 				INFOPLIST_FILE = WhiteBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JinMao.WhiteBoard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cachethotelgroup.cyc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
 			};
@@ -539,11 +620,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ADDCFC7A3124F82EEDF8421 /* Pods-WhiteBoard.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P6EM54J52E;
 				INFOPLIST_FILE = WhiteBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JinMao.WhiteBoard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cachethotelgroup.cyc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0.1;
 			};

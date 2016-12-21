@@ -8,18 +8,21 @@
 
 import UIKit
 
-protocol Mark: NSCopying, NSCoding{
+protocol Mark: class, NSCopying, NSCoding{
     var color: UIColor? {get set}
     var size: CGFloat? {get set}
-    var location: CGPoint {get set}
+    var location: CGPoint? {get set}
     var lastChild: Mark? {get}
-    var count: UInt {get }
+    var count: Int {get }
+    var description: String {get}
     
-    func addMark()
+    func addMark(_ mark: Mark)
     func removeMark(_ mark: Mark)
-    func childAtIndex(_ index: UInt) -> Mark?
+    func childAtIndex(_ index: Int) -> Mark?
     
     func drawWithContext(_ contenxt: CGContext)
+
+    func acceptMarkVisitor(_ visitor: MarkVisitor)
     
 }
 
